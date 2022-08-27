@@ -15,6 +15,7 @@
 
     --ff-100: 'Barlow', sans-serif;
     --ff-200: 'Fraunces', serif;
+    
 
 }
 
@@ -36,7 +37,7 @@ header {
     background-image: url(./images/mobile/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 60vh;
+    min-height: 65vh;
 }
 /*
 *navbar section
@@ -188,9 +189,13 @@ main-heading */
     height: 35vh;
 }
 
+.btn-wrap {
+    margin-bottom: 4em;
+    position: relative;
+}
+
 .btn-learn {
     text-decoration: none;
-    margin-bottom: 4em;
     font-family: var(--ff-200);
     font-size: 1.2rem;
     font-weight: 900;
@@ -198,10 +203,105 @@ main-heading */
     color: var(--Very-dark-desaturated-blue);
 }
 
-.btn-learn-y{
-    border-bottom: 4px solid var(--clr-yellow); 
+/* TODO: making the hover work on the line */
+.bottom-line {
+    position: absolute;
+    cursor: pointer;
+    top: 1.025rem;
+    z-index: -1;
+    left: -0.4rem;
+    right: 0;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--clr-yellow);
+    height: .6rem;
+    width: 9.5rem;
+    opacity: 0.4;
 }
 
-.btn-learn-p{
-    border-bottom: 4px solid var(--clr-soft-red); 
+/* .btn-learn .bottom-line:hover{
+    opacity: 1;
+    color: red;
+} */
+
+.bottom-line2 {
+    position: absolute;
+    cursor: pointer;
+    top: 1.025rem;
+    z-index: -1;
+    left: -0.4rem;
+    right: 0;
+    border: 0;
+    border-radius: .5rem;
+    background-color: var(--clr-soft-red);
+    height: .6rem;
+    width: 9.5rem;
+    opacity: 0.4;
+}
+
+
+/* *section third-row 
+*classes
+.third-row section
+.col-1 div
+.col-2 div
+.sub-heading2
+.text2
+*/
+
+.third-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.col-1 {
+    background-image: url('./images/mobile/image-graphic-design.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .8rem;
+}
+.col-2 {
+    background-image: url('./images/mobile/image-photography.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .8rem;
+}
+.sub-heading2 {
+    font-family: var(--ff-200);
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--clr-Dark-desaturated);
+    text-transform: capitalize;
+}
+
+.text2 {
+    line-height: 1.5;
+    color: var(--clr-Dark-desaturated);
+    min-width: 32ch;
+    margin-bottom: 3rem
+}
+
+.col-2 .sub-heading2 {
+    color: var( --clr-dark-blue);
+}
+
+.col-2 .text2 {
+    color: var(--clr-dark-blue);
 }
