@@ -262,6 +262,7 @@ main-heading */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -275,6 +276,7 @@ main-heading */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+   
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -304,4 +306,72 @@ main-heading */
 
 .col-2 .text2 {
     color: var(--clr-dark-blue);
+}
+
+/* *testimonials section
+.testimonials section
+.testimonial-heading h1
+.testimonial-list div
+.testimonial div
+.testimonial-img img
+.testimonial-comment p
+.testimonial-name p
+.testimonial-job p
+*/
+
+.testimonials {
+    margin-block: 4em;
+    text-align: center;
+}
+
+.testimonial-heading {
+    font-family: var(--ff-200);
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--Grayish-blue);
+    margin-bottom: 2rem;
+}
+
+.testimonial-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.testimonial-img {
+    width: 84px;
+    border-radius: 100vw;
+    margin-bottom: 1em;
+}
+
+.testimonial-comment {
+    color: var(--Very-dark-desaturated-blue);
+    font-size: 1.250rem;    
+    line-height: 2;
+    min-width: 32ch;
+}
+
+.testimonial-name {
+    font-family: var(--ff-200);
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.testimonial-job {
+    color: var(--Grayish-blue);
+    margin-top: -0.5rem;
 }
