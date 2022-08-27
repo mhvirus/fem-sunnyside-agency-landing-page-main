@@ -211,6 +211,12 @@ main-heading */
     flex-direction: column-reverse;
 }
 
+@media (min-width: 1439px) {
+    .first-row {
+        flex-direction: row;
+    }
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -237,6 +243,25 @@ main-heading */
     width: 32ch;
 }
 
+@media (min-width: 1439px) {
+    .content{    
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: start;
+        margin-top: 7em;
+        margin-left: 8rem;
+        margin-bottom: 5em;
+    }
+    
+    .sub-heading {
+        width: 15ch;
+    }
+    
+    .text {
+        width: 45ch;
+    }
+}
+
 .image-1 {
     background-image: url('./images/mobile/image-transform.jpg');
     background-repeat: no-repeat;
@@ -244,9 +269,23 @@ main-heading */
     height: 35vh;
 }
 
+@media (min-width: 1439px) {
+    .image-1 {
+        background-image: url('./images/desktop/image-transform.jpg');
+        height: 69vh;
+        width: 100%;
+    }
+}
+
 .second-row {
     display: flex;
     flex-direction: column-reverse;
+}
+
+@media (min-width: 1439px) {
+    .second-row {
+        flex-direction: row-reverse;
+    }
 }
 
 .image-2 {
@@ -254,6 +293,14 @@ main-heading */
     background-repeat: no-repeat;
     background-size: cover;
     height: 35vh;
+}
+
+@media (min-width: 1439px) {
+    .image-2 {
+        background-image: url('./images/desktop/image-stand-out.jpg');
+        height: 69vh;
+        width: 100%;
+    }
 }
 
 .btn-wrap {
@@ -324,6 +371,12 @@ main-heading */
     text-align: center;
 }
 
+@media (min-width: 1439px) {
+    .third-row {
+        flex-direction: row; 
+    }
+}
+
 .col-1 {
     background-image: url('./images/mobile/image-graphic-design.jpg');
     background-repeat: no-repeat;
@@ -338,12 +391,19 @@ main-heading */
     align-items: center;
     padding: .8rem;
 }
+
+@media (min-width: 1439px) {
+    .col-1 {
+        background-image: url('./images/desktop/image-graphic-design.jpg');
+    }
+}
+
 .col-2 {
     background-image: url('./images/mobile/image-photography.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-   
+    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -352,6 +412,13 @@ main-heading */
     align-items: center;
     padding: .8rem;
 }
+
+@media (min-width: 1439px) {
+    .col-2 {
+        background-image: url('./images/desktop/image-photography.jpg');
+    }
+}
+
 .sub-heading2 {
     font-family: var(--ff-200);
     font-size: 2rem;
@@ -365,6 +432,15 @@ main-heading */
     color: var(--clr-Dark-desaturated);
     min-width: 32ch;
     margin-bottom: 3rem
+}
+
+@media (min-width: 1439px) {  
+    .text2 {
+        line-height: 1.5;
+        color: var(--clr-Dark-desaturated);
+        max-width: 37ch;
+        margin-bottom: 3rem
+    }
 }
 
 .col-2 .sub-heading2 {
@@ -410,6 +486,19 @@ main-heading */
     margin-top: 3rem;
 }
 
+@media (min-width: 1439px) {
+    .testimonials {
+        margin-bottom: 8.5em;
+    }
+
+    .testimonial-list {
+        flex-direction: row;
+        gap: 1em;
+        margin-top: 3.5rem;
+        padding-inline: 13rem;
+    }
+}
+
 .testimonial {
     display: flex;
     flex-direction: column;
@@ -443,6 +532,15 @@ main-heading */
     margin-top: -0.5rem;
 }
 
+@media (min-width: 1439px) {
+    .testimonial {
+        padding: 0;
+    }
+
+    .testimonial-comment {
+        min-width: 35ch;
+    }
+
 /* *gallary section start
 .gallary section
 .img-1 div
@@ -458,6 +556,12 @@ main-heading */
     margin: 0;
     padding: 0;
     overflow: hidden;
+}
+
+@media (min-width: 1430px) {
+    .gallary {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 .img-1 {
     background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
@@ -489,6 +593,33 @@ main-heading */
     background-size: cover;
     min-width: 11.71875rem;
     min-height: 13rem;
+}
+
+@media (min-width: 1430px) {
+    .img-1 {
+        background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+        min-width: 11.71875rem;
+        min-height: 30rem;
+        background-position-y: -3rem;
+    }
+    
+    .img-2 {
+        background-image: url('./images/desktop/image-gallery-orange.jpg');
+        min-height: 30rem;
+        background-position-y: -3rem;
+    }
+    
+    .img-3 {
+        background-image: url('./images/desktop/image-gallery-cone.jpg');
+        min-height: 30rem;
+        background-position-y: -3rem;
+    }
+    
+    .img-4 {
+        background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
+        min-height: 30rem;
+        background-position-y: -3rem;
+    }
 }
 
 /* *footer style start
