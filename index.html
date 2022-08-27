@@ -21,7 +21,9 @@
   <header>
 
     <nav class="navbar">
-      <img src="./images/logo.svg" alt="Sunnyside logo" class="navbar-logo">
+      <svg class="icon">
+        <use xlink:href="./images/logo.svg#logo"></use>
+      </svg>
       <img src="./images/icon-hamburger.svg" alt="icon-for-small-screens" class="navabar-humburger" aria-label="navagation button">
       <ul class="navbar-list" aria-label="navigation">
         <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
@@ -33,7 +35,7 @@
 
     <section class="hero">
       <h1 class="main-heading">We are creatives</h1>
-      <img src="./images/icon-arrow-down.svg" alt="down arrow">
+      <img src="./images/icon-arrow-down.svg" class="down-arrow" alt="down arrow">
     </section>
 
   </header>
@@ -122,7 +124,9 @@
   </main>
   
   <footer aria-label="footer">
-    <img class="logo logo-clr" src="./images/logo.svg" alt="Sunnyside logo">
+    <svg class="footer-logo">
+      <use xlink:href="./images/logo2.svg#logo" class="path"></use>
+    </svg>
     <nav class="footer-navbar" aria-label="footer navigation">
       <ul>
         <li><a href="#">About</a></li>
