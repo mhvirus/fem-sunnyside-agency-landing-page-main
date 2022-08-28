@@ -13,30 +13,40 @@
 
   <!-- main stylesheet -->
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   <title>Sunnyside agency landing page</title>
 
 </head>
 <body>
 
-  <header>
+  <header class="primary-header">
+    <div class="nav-wrapper">
+      <!-- logo -->
+      <a href="#" aria-label="home">
+        <svg class="logo" width="146" height="24">
+          <use xlink:href="./images/logo.svg#logo"></use>
+        </svg>
+      </a>
+      <!-- hamburger menu button for mobile -->
+      <button class="mobile-nav-toggle" aria-controls="primary-navagition" aria-expanded="false">
+        <img  class="navabar-humburger icon-hamburger" src="./images/icon-hamburger.svg" alt="icon-for-small-screens" aria-hidden="true">
+        <span class="visually-hidden" >Menu</span>
+      </button>
 
-    <nav class="navbar">
-      <svg class="icon">
-        <use xlink:href="./images/logo.svg#logo"></use>
-      </svg>
-      <img src="./images/icon-hamburger.svg" alt="icon-for-small-screens" class="navabar-humburger" aria-label="navagation button">
-      <ul class="navbar-list" aria-label="navigation">
-        <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Services</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Projects</a></li>
-        <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
-      </ul>
-    </nav>
-
-    <section class="hero">
-      <h1 class="main-heading">We are creatives</h1>
-      <img src="./images/icon-arrow-down.svg" class="down-arrow" alt="down arrow">
-    </section>
+      <nav class="primary-navagition" id="primary-navagition">
+        <ul role="list" class="nav-list" aria-label="primary">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+      <section class="hero">
+        <h1 class="main-heading">We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" class="down-arrow" alt="down arrow">
+      </section>
+  
 
   </header>
 
@@ -134,11 +144,46 @@
         <li><a href="#">Projects</a></li>
       </ul>
     </nav>
-    <div class="footer-socials">
-      <img class="social-icons" src="./images/icon-facebook.svg" alt="facebook">
-      <img class="social-icons" src="./images/icon-instagram.svg" alt="instagram">
-      <img class="social-icons" src="./images/icon-twitter.svg" alt="twittwer">
-      <img class="social-icons" src="./images/icon-pinterest.svg" alt="pinterest">
+    <div class="social-list">
+      <ul>
+        <li>
+          <a href="#" aria-label="facebook">
+            <svg class="social-icon" width="146" height="24">
+              <use xlink:href="./images/social-icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#" aria-label="instagram">
+            <svg class="social-icon" width="146" height="24">
+              <use xlink:href="./images/social-icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#" aria-label="pintrest">
+            <svg class="social-icon" width="146" height="24">
+              <use xlink:href="./images/social-icons.svg#icon-pinterest"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="#" aria-label="twitter">
+            <svg class="social-icon" width="146" height="24">
+              <use xlink:href="./images/social-icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
 
