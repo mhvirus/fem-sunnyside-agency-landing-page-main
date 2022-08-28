@@ -26,6 +26,14 @@
     scroll-behavior: smooth;
 }
 
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
 body {
     font-size: 1.125rem;
     font-family: var(--ff-100);
@@ -251,6 +259,7 @@ main-heading */
         margin-top: 7em;
         margin-left: 8rem;
         margin-bottom: 5em;
+        width: 50%;
     }
     
     .sub-heading {
@@ -273,9 +282,11 @@ main-heading */
     .image-1 {
         background-image: url('./images/desktop/image-transform.jpg');
         height: 69vh;
-        width: 100%;
+        width: 58.6%;
     }
 }
+
+/* second row start */
 
 .second-row {
     display: flex;
@@ -299,7 +310,7 @@ main-heading */
     .image-2 {
         background-image: url('./images/desktop/image-stand-out.jpg');
         height: 69vh;
-        width: 100%;
+        width: 58.6%;
     }
 }
 
@@ -382,7 +393,6 @@ main-heading */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -395,6 +405,7 @@ main-heading */
 @media (min-width: 1439px) {
     .col-1 {
         background-image: url('./images/desktop/image-graphic-design.jpg');
+        width: 50%;
     }
 }
 
@@ -403,7 +414,6 @@ main-heading */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    width: 100%;
     height: 70vh;
     display: flex;
     flex-direction: column;
@@ -416,6 +426,7 @@ main-heading */
 @media (min-width: 1439px) {
     .col-2 {
         background-image: url('./images/desktop/image-photography.jpg');
+        width: 50%;
     }
 }
 
@@ -540,7 +551,7 @@ main-heading */
     .testimonial-comment {
         min-width: 35ch;
     }
-
+}
 /* *gallary section start
 .gallary section
 .img-1 div
@@ -600,25 +611,21 @@ main-heading */
         background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
         min-width: 11.71875rem;
         min-height: 30rem;
-        background-position-y: -3rem;
     }
     
     .img-2 {
         background-image: url('./images/desktop/image-gallery-orange.jpg');
         min-height: 30rem;
-        background-position-y: -3rem;
     }
     
     .img-3 {
         background-image: url('./images/desktop/image-gallery-cone.jpg');
         min-height: 30rem;
-        background-position-y: -3rem;
     }
     
     .img-4 {
         background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
         min-height: 30rem;
-        background-position-y: -3rem;
     }
 }
 
